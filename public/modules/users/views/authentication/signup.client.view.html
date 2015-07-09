@@ -1,0 +1,51 @@
+<section class="row" data-ng-controller="AuthenticationController">
+	
+	<div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4 login-form">
+		<h3 class="col-md-12 text-center">Sign up</h3>
+		<form name="userForm" data-ng-submit="signup()" class="signin form-horizontal" novalidate autocomplete="off">
+			<fieldset>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="glyphicon glyphicon-certificate"></i>
+					</span>
+					<input type="text" required id="firstName" name="firstName" class="form-control" data-ng-model="credentials.firstName" placeholder="First Name">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="glyphicon glyphicon-certificate"></i>
+					</span>
+					
+					<input type="text" id="lastName" name="lastName" class="form-control" data-ng-model="credentials.lastName" placeholder="Last Name">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="glyphicon glyphicon-envelope"></i>
+					</span>
+					
+					<input type="email" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="Email">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="glyphicon glyphicon-user"></i>
+					</span>
+					
+					<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Username">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="glyphicon glyphicon-asterisk"></i>
+					</span>
+					
+					<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
+				</div>
+				<div class="text-center">
+					<button type="submit" class="btn btn-block btn-large btn-primary">Sign up</button>&nbsp; or&nbsp;
+					<a href="/#!/signin" class="show-signup">Sign in</a>
+				</div>
+				<div data-ng-show="error" class="text-center text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</section>

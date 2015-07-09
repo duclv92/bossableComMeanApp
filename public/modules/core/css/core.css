@@ -1,0 +1,24 @@
+.content {
+	margin-top: 50px;
+}
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
+.mt4{
+	margin-top:4%;
+}
+.login-form{
+	background: #dfdfdf;
+	border: 15px solid #dfdfdf;
+	border-radius: 15px;
+	margin-top:40px;
+}
